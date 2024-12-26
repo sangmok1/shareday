@@ -1,0 +1,113 @@
+.notice-page {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.notice-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.notice-write-btn {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.notice-write-btn:hover {
+    background-color: #0056b3;
+}
+
+.notice-list {
+    margin-top: 20px;
+}
+
+.notice-item {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.notice-item:hover {
+    background-color: #f8f9fa;
+}
+
+.notice-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notice-date {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.notice-content {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.page-number {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    background: none;
+    cursor: pointer;
+}
+
+.page-number.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.notice-form {
+    margin-top: 20px;
+}
+
+.notice-form input[type="text"],
+.notice-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.notice-form textarea {
+    min-height: 200px;
+    resize: vertical;
+}
+
+.notice-form-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.notice-form-buttons button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px
+}
+
+/* ... 기존 스타일 ... */ 

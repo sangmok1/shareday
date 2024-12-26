@@ -1,0 +1,216 @@
+.signin-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.signin-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.signin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.signin-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.signin-label {
+  font-size: 14px;
+  color: #555;
+  font-weight: 500;
+}
+
+.signin-input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.signin-input:focus {
+  outline: none;
+  border-color: #4a90e2;
+}
+
+.signin-submit-button {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+
+.signin-submit-button {
+  background-color: #4a90e2;
+  color: white;
+  margin-top: 10px;
+}
+
+
+.signin-verify-button:hover:not(.disabled) {
+  background-color: #5a6268;
+}
+
+.signin-submit-button:hover {
+  background-color: #357abd;
+}
+
+.signin-error {
+  color: #dc3545;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.signin-success-message {
+  text-align: center;
+  color: #28a745;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+}
+
+/* 모바일 반응형 */
+@media (max-width: 768px) {
+  .signin-container {
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+  }
+
+  .signin-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .signin-input {
+    padding: 10px;
+  }
+
+  .signin-verify-button,
+  .signin-submit-button {
+    padding: 10px;
+  }
+} 
+
+.verification-button {
+    /* 기존 스타일 유지 */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.verification-button.disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.verification-button:hover:not(.disabled) {
+    /* hover 효과는 비활성화 상태가 아닐 때만 적용 */
+    background-color: #4a90e2;
+} 
+
+.email-verification-group {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.signin-verify-button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2196F3 !important;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 120px;
+  height: 38px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.signin-verify-button:hover {
+  background-color: #1976D2 !important;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.signin-verify-button.disabled,
+.signin-verify-button:disabled {
+  background-color: #cccccc !important;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+  color: #666666;
+}
+
+.signin-verify-button:last-child {
+  background-color: #2196F3 !important;
+}
+
+.signin-verify-button:last-child:hover {
+  background-color: #1976D2 !important;
+}
+
+.signin-input {
+  flex: 1;
+  margin: 0;
+}
+
+.signin-submit-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.error-message {
+  color: #ff0000;
+  font-size: 14px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.input-error-message {
+  color: #ff4444;
+  font-size: 12px;
+  margin-top: 4px;
+  margin-bottom: 0;
+}
+
+.nickname-check-button {
+  margin-left: 8px;
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.nickname-check-button:hover {
+  background-color: #45a049;
+}
+
+.signin-input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}

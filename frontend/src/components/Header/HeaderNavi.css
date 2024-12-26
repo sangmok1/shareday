@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrap {
+    padding: 15px;
+    letter-spacing: -0.5px;
+}
+
+/* Locations Section */
+.locations {
+    text-align: right;
+    margin: auto;
+    height: 30vh;
+    padding: 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+
+.locations h1 {
+    font-size: 36px;
+}
+
+.locations-contaniner-font {
+    width: 5%;
+    height: 10%;
+    float: left;
+}
+
+.locations-contaniner {
+    width: 95%;
+    height: 10%;
+    float: left;
+}
+
+.locations-main {
+    text-align: left;
+    margin-top: 5%;
+    margin-left: 2%;
+    width: 100%;
+}
+
+.locations-main-menu {
+    text-align: left;
+    margin-left: 2%;
+    margin-top: 1%;
+    width: 100vh;
+    height: 30%;
+    color: rgb(0,0,0);
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+    display: block;
+    float: left;
+}
+
+.logo-front {
+    font-size: 12px;
+    margin-top: 15%;
+    color: rgb(167,168,163);
+}
+
+.locations-main-menu a {
+    color: black;
+    float: left;
+    margin-left: 2%;
+    font-size: 15px;
+}
+
+/* 태블릿 */
+@media (max-width: 1024px) {
+    .locations {
+        height: 25vh;
+        padding: 15px 0;
+        font-size: 20px;
+    }
+
+    .locations h1 {
+        font-size: 30px;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .locations-main-menu a {
+        font-size: 14px;
+    }
+}
+
+/* 모바일 */
+@media (max-width: 768px) {
+    .locations {
+        height: 20vh;
+        padding: 10px 0;
+        font-size: 18px;
+    }
+
+    .locations h1 {
+        font-size: 24px;
+    }
+
+    .locations-contaniner-font {
+        width: 10%;
+    }
+
+    .locations-contaniner {
+        width: 90%;
+    }
+
+    .locations-main {
+        margin-top: 8%;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    .logo-front {
+        font-size: 10px;
+        margin-top: 12%;
+    }
+
+    .locations-main-menu {
+        width: 100%;
+        margin-left: 1%;
+    }
+
+    .locations-main-menu a {
+        font-size: 13px;
+        margin-left: 1.5%;
+    }
+}
+
+/* 작은 모바일 화면 */
+@media (max-width: 480px) {
+    .locations {
+        height: 15vh;
+        padding: 8px 0;
+        font-size: 16px;
+    }
+
+    .locations h1 {
+        font-size: 20px;
+    }
+
+    .locations-contaniner-font {
+        width: 15%;
+    }
+
+    .locations-contaniner {
+        width: 85%;
+    }
+
+    .locations-main {
+        margin-top: 10%;
+    }
+
+    .logo {
+        width: 60px;
+    }
+
+    .logo-front {
+        font-size: 9px;
+        margin-top: 10%;
+    }
+
+    .locations-main-menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .locations-main-menu a {
+        font-size: 12px;
+        margin-left: 1%;
+        float: none;
+    }
+}
+
+/* 햄버거 메뉴 스타일 수정 */
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    padding: 15px;
+    position: relative;
+    left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    z-index: 100;
+}
+
+.hamburger-menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+/* 모바일 반응형 스타일 수정 */
+@media screen and (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    .locations-main-menu {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background: white;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease-in-out;
+        z-index: 99;
+        display: none;
+    }
+
+    .locations-main-menu.active {
+        transform: translateY(0);
+        display: block;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .main-nav li {
+        margin: 5px 0;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .main-nav li a {
+        display: block;
+        padding: 8px 0;
+    }
+
+    /* 메뉴가 열릴 때 play-now 영역 밀어내기 */
+    body.menu-open .play-now {
+        margin-top: 180px;
+        transition: margin-top 0.3s ease-in-out;
+    }
+
+    /* body 영역 조정을 위한 스타일 */
+    body.menu-open {
+        margin-bottom: 250px;
+    }
+}
+
+/* 기존 스타일에 추가 */
+.logout-button {
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: inherit;
+  }
+  
+  .logout-button:hover {
+    color: inherit;
+    text-decoration: none;
+  } 

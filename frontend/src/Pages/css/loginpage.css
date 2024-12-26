@@ -1,0 +1,143 @@
+.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.login-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.login-label {
+  font-size: 14px;
+  color: #555;
+  font-weight: 500;
+}
+
+.login-input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.login-input:focus {
+  outline: none;
+  border-color: #4a90e2;
+}
+
+.login-button {
+  background-color: #4a90e2;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+  font-weight: 500;
+}
+
+.login-button:hover {
+  background-color: #357abd;
+}
+
+.login-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.login-link {
+  color: #666;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.login-link:hover {
+  color: #4a90e2;
+}
+
+.login-error {
+  color: #dc3545;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* 모바일 반응형 */
+@media (max-width: 768px) {
+  .login-container {
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+  }
+
+  .login-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .login-input {
+    padding: 10px;
+  }
+
+  .login-button {
+    padding: 10px;
+  }
+
+  .login-links {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+/* 로그인 성공 시 메시지 스타일 */
+.login-success-message {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.login-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  text-align: center;
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}

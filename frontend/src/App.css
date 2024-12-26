@@ -1,0 +1,91 @@
+.App {
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden; /* 가로 스크롤 방지 */
+}
+
+/* Header 고정 */
+header {
+  flex-shrink: 0;
+  height: 60px;
+  background-color: rgb(0,0,0);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Header 아래 콘텐츠 */
+.content {
+  flex-grow: 1;
+  margin-top: 60px;
+  padding: 20px;
+  background-color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* 태블릿 */
+@media (max-width: 1024px) {
+  header {
+    height: 55px;
+  }
+
+  .content {
+    margin-top: 55px;
+    padding: 15px;
+  }
+}
+
+/* 모바일 */
+@media (max-width: 768px) {
+  header {
+    height: 50px;
+  }
+
+  .content {
+    margin-top: 50px;
+    padding: 12px;
+  }
+}
+
+/* 작은 모바일 화면 */
+@media (max-width: 480px) {
+  header {
+    height: 45px;
+  }
+
+  .content {
+    margin-top: 45px;
+    padding: 10px;
+  }
+}
+
+/* 아이폰 SE 등 매우 작은 화면 */
+@media (max-width: 320px) {
+  .content {
+    padding: 8px;
+  }
+}
+
+/* 가로 모드 대응 */
+@media (max-height: 500px) and (orientation: landscape) {
+  header {
+    height: 40px;
+  }
+
+  .content {
+    margin-top: 40px;
+    padding: 10px;
+  }
+}
